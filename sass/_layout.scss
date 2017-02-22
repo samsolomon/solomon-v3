@@ -1,3 +1,13 @@
+@include generate-padding-classes(216);
+@include generate-margin-classes(216);
+@include generate-positioning-classes(216);
+
+@include generate-percentage-widths;
+@include generate-min-heights(600);
+@include generate-min-widths(600);
+@include generate-max-widths(2000);
+
+
 body {
   background-color: $color-gray-100;
 }

@@ -27,20 +27,19 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="container">
-			<div class="site-branding">
-				<?php
-				if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-				endif; ?>
-			</div><!-- .site-branding -->
+		<div class="row mt30">
+			<div class="col-xs-12">
+				<div class="container">
+					<div class="site-branding inline-block">
+						<img class="inline-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/bear.svg">
+						<p class="site-title inline-block ml5"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation inline-block pull-right" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
+					<nav id="site-navigation" class="main-navigation inline-block pull-right" role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+					</nav><!-- #site-navigation -->
+				</div>
+			</div>
 		</div>
 	</header><!-- #masthead -->
 

@@ -15,4 +15,12 @@ $color-primary:#4CCEAC;
 // --------------------------------------------------------------
 //          TYPOGRAPHY
 // --------------------------------------------------------------
-$primary-font: "Adelle Sans", "Helvetica Neue", sans-serif;
+$primary-font: "adelle-sans", "Helvetica Neue", sans-serif;
+
+
+// --------------------------------------------------------------
+//          MIXINS
+// --------------------------------------------------------------
+$spacer: 1px;
+$multiplier: 12;
+$box: $multiplier * 1px;
