@@ -33541,6 +33541,9 @@ a {
     color: #A1A2A4;
     border-bottom: none; }
 
+.current-menu-item a {
+  color: #FFF; }
+
 .site-title a {
   color: #FFF;
   text-decoration: none;
