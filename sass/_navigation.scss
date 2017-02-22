@@ -11,14 +11,16 @@
   display: inline-block;
 
   a {
-    padding: 0 15px;
+    margin: 0 15px;
     color: $color-gray-40;
+    border-bottom: none;
   }
 }
 
 .site-title a {
   color: $color-white;
   text-decoration: none;
+  border-bottom: none;
 }
 
 
@@ -30,11 +32,6 @@
   .site-navigation {
     float: none;
     text-align: center;
-
-    ul {
-      padding: 0;
-      text-align: center;
-    }
   }
 }
 

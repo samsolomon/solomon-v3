@@ -16,3 +16,8 @@ body {
 .inline-block { display: inline-block;}
 .inline {display: inline;}
 .block {display: block;}
+
+
+.homepage h1 a {
+  border-bottom: 6px solid $color-primary;
+}

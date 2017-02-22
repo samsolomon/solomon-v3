@@ -32,3 +32,16 @@ h4 {
   color: $color-gray-40;
   margin: 0;
 }
+
+a {
+  @include transition(.5s);
+
+  color: $color-white;
+  border-bottom: 2px solid $color-primary;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+    text-decoration: none;
+  }
+}

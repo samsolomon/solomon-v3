@@ -105,8 +105,8 @@ add_action( 'widgets_init', 'solomon_v3_widgets_init' );
  * Enqueue bootstrap.
  */
 function bootstrap_scripts() {
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/sass/bootstrap.min.css' );
-		wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.4' );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/vendor/bootstrap.min.css' );
+		wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/vendor/bootstrap.min.js', array('jquery'), '3.3.4' );
 }
 add_action('wp_enqueue_scripts', 'bootstrap_scripts');
 
