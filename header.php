@@ -28,19 +28,15 @@
 
 	<header id="masthead" class="site-header mt30" role="banner">
 		<div class="container ">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="site-branding">
-						<p class="site-title inline-block">
-							<img class="inline-block mr5" src="<?php bloginfo('stylesheet_directory'); ?>/img/bear.svg">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-						</p>
-					</div><!-- .site-branding -->
-				</div>
-				<nav id="site-navigation" class="main-navigation col-md-6" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
-			</div>
+			<div class="site-branding">
+				<p class="site-title inline-block">
+					<img class="inline-block mr5" src="<?php bloginfo('stylesheet_directory'); ?>/img/bear.svg">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</p>
+			</div><!-- .site-branding -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
+			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
 

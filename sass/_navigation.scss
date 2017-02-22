@@ -1,8 +1,11 @@
 // --------------------------------------------------------------
 //          PRIMARY
 // --------------------------------------------------------------
+.site-branding {
+  display: inline-block;
+}
 
-.site-navigation {
+.main-navigation {
   float: right;
   display: inline-block;
 }
@@ -26,12 +29,18 @@
 
 @media only screen and (max-width : 768px){
   .site-branding {
+    display: block;
     text-align: center;
   }
 
-  .site-navigation {
+  .main-navigation {
     float: none;
+    display: block;
     text-align: center;
+
+    ul {
+      padding: 0;
+    }
   }
 }
 

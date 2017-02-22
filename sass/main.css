@@ -33527,7 +33527,10 @@ a {
     color: #4CCEAC;
     text-decoration: none; }
 
-.site-navigation {
+.site-branding {
+  display: inline-block; }
+
+.main-navigation {
   float: right;
   display: inline-block; }
 
@@ -33545,11 +33548,15 @@ a {
 
 @media only screen and (max-width: 768px) {
   .site-branding {
+    display: block;
     text-align: center; }
 
-  .site-navigation {
+  .main-navigation {
     float: none;
-    text-align: center; } }
+    display: block;
+    text-align: center; }
+    .main-navigation ul {
+      padding: 0; } }
 .site-footer {
   background-color: #202328; }
 

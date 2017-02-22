@@ -23,12 +23,27 @@
 			</div>
 			<div class="col-md-3">
 				<h4>Navigation</h4>
+				<ul>
+					<li>Stuff Here</li>
+					<li>Stuff Here</li>
+					<li>Stuff Here</li>
+				</ul>
 			</div>
 			<div class="col-md-3">
 				<h4>Keep in Touch</h4>
+				<ul>
+					<li>Stuff Here</li>
+					<li>Stuff Here</li>
+					<li>Stuff Here</li>
+				</ul>
 			</div>
 			<div class="col-md-3">
 				<h4>Elsewhere</h4>
+				<ul>
+					<li>Stuff Here</li>
+					<li>Stuff Here</li>
+					<li>Stuff Here</li>
+				</ul>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
