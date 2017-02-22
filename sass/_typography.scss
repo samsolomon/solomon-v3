@@ -1,5 +1,5 @@
 body {
-  font-family: $primary-font;
+  font-family: $sans-serif;
   font-size: 20px;
   text-rendering: optimizeLegibility;
 
@@ -12,4 +12,23 @@ body {
   -moz-font-feature-settings: "liga", "clig";
   -ms-font-feature-settings: "liga", "clig";
   -webkit-font-feature-settings: "liga", "clig";
+
+  color: $color-white;
+}
+
+.sans-serif {font-family: $sans-serif;}
+.serif {font-family: $serif;}
+
+h1 {
+  font-family: $serif;
+  font-weight: 600;
+  font-size: 6.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color-gray-40;
+  margin: 0;
 }

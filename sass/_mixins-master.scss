@@ -150,6 +150,19 @@
     .mr-pc-#{$i} {
       margin-right: #{$i}% !important;
     }
+
+		.mt-vh-#{$i} {
+			margin-top: #{$i}vh !important;
+		}
+		.mb-vh-#{$i} {
+			margin-bottom: #{$i}vh !important;
+		}
+		.ml-vh-#{$i} {
+			margin-left: #{$i}vh !important;
+		}
+		.mr-vh-#{$i} {
+			margin-right: #{$i}vh !important;
+		}
   }
 
   .m0 {

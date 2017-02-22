@@ -13,12 +13,27 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'solomon-v3' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'solomon-v3' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'solomon-v3' ), 'solomon-v3', '<a href="https://automattic.com/" rel="designer">Sam Solomon</a>' ); ?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer mt30" role="contentinfo">
+		<div class="container">
+			<div class="row mt20 mb20">
+				<div class="col-md-3">
+					<div class="site-branding inline-block">
+						<img class="inline-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/bear.svg">
+						<p class="site-title inline-block ml5"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<h4>Navigation</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>Keep in Touch</h4>
+				</div>
+				<div class="col-md-3">
+					<h4>Elsewhere</h4>
+				</div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

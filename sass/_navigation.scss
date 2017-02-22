@@ -1,3 +1,23 @@
-#primary-menu li {
+// --------------------------------------------------------------
+//          PRIMARY
+// --------------------------------------------------------------
+
+.menu-item {
   display: inline-block;
+
+  a {
+    padding: 0 15px;
+    color: $color-gray-40;
+  }
+}
+
+.site-title a {
+  color: $color-white;
+  text-decoration: none;
+}
+// --------------------------------------------------------------
+//          FOOTER
+// --------------------------------------------------------------
+.site-footer {
+  background-color: $color-gray-95;
 }

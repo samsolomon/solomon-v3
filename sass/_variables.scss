@@ -2,6 +2,7 @@
 //          COLORS
 // --------------------------------------------------------------
 $color-gray-100: #14171C;
+$color-gray-95: #202328;
 $color-gray-80: #424448;
 $color-gray-60: #727477;
 $color-gray-40: #A1A2A4;
@@ -15,12 +16,14 @@ $color-primary:#4CCEAC;
 // --------------------------------------------------------------
 //          TYPOGRAPHY
 // --------------------------------------------------------------
-$primary-font: "adelle-sans", "Helvetica Neue", sans-serif;
+$sans-serif: "adelle-sans", "Helvetica Neue", sans-serif;
+$serif:"leitura-news", georgia, serif;
 
 
 // --------------------------------------------------------------
 //          MIXINS
 // --------------------------------------------------------------
 $spacer: 1px;
+$spacer-vh: 1vh;
 $multiplier: 12;
 $box: $multiplier * 1px;
