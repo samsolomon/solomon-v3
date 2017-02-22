@@ -2,17 +2,9 @@
   color: $color-gray-100;
   border: 1px solid $color-gray-40;
   border-radius: 50px;
-}
 
-.btn-primary {
-  color: #fff;
-  background-color: $color-primary;
-  border-color: $color-primary;
-}
-
-.btn {
-  padding: 6px 20px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 50px;
+  @include placeholder {
+    color: $color-gray-20;
+    font-style: italic;
+  }
 }

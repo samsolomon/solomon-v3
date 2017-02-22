@@ -2,6 +2,11 @@
 //          PRIMARY
 // --------------------------------------------------------------
 
+.site-navigation {
+  float: right;
+  display: inline-block;
+}
+
 .menu-item {
   display: inline-block;
 
@@ -15,6 +20,26 @@
   color: $color-white;
   text-decoration: none;
 }
+
+
+@media only screen and (max-width : 768px){
+  .site-branding {
+    text-align: center;
+  }
+
+  .site-navigation {
+    float: none;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+
+
+
 // --------------------------------------------------------------
 //          FOOTER
 // --------------------------------------------------------------
