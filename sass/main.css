@@ -1,6 +1,5 @@
 /*!
 Theme Name: solomon.io
-Theme URI: http://underscores.me/
 Author: Sam Solomon
 Author URI: http://solomon.io
 Description: Description
@@ -90,5 +89,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 body {
   background-color: #14171C; }
+
+.inline-block {
+  display: inline-block; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+body {
+  font-family: "Adelle Sans", "Helvetica Neue", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

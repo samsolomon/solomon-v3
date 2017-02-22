@@ -1,6 +1,5 @@
 /*!
 Theme Name: solomon.io
-Theme URI: http://underscores.me/
 Author: Sam Solomon
 Author URI: http://solomon.io
 Description: Description
@@ -20,7 +19,7 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-@import "variables-site/variables-site";
+@import "variables";
 @import "mixins-master";
 @import "modules/accessibility";
 @import "modules/alignments";
