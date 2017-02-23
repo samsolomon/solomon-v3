@@ -33490,6 +33490,10 @@ body {
 ul {
   padding-left: 0; }
 
+.feature-image img {
+  width: 100%;
+  height: auto; }
+
 body {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
