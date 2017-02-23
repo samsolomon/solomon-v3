@@ -22,28 +22,17 @@
 				</div>
 			</div>
 			<div class="col-md-3">
-				<h4>Navigation</h4>
-				<ul>
-					<li>Stuff Here</li>
-					<li>Stuff Here</li>
-					<li>Stuff Here</li>
-				</ul>
+				<h4 class="mb10"><?php $nav_menu = wp_get_nav_menu_object(2); echo $nav_menu->name; ?></h4>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-left-menu', 'container_class' => 'footer-menu' ) ); ?>
 			</div>
 			<div class="col-md-3">
-				<h4>Keep in Touch</h4>
-				<ul>
-					<li>Stuff Here</li>
-					<li>Stuff Here</li>
-					<li>Stuff Here</li>
-				</ul>
+				<h4 class="mb10"><?php $nav_menu = wp_get_nav_menu_object(20); echo $nav_menu->name; ?></h4>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-middle-menu', 'container_class' => 'footer-menu' ) ); ?>
 			</div>
 			<div class="col-md-3">
-				<h4>Elsewhere</h4>
-				<ul>
-					<li>Stuff Here</li>
-					<li>Stuff Here</li>
-					<li>Stuff Here</li>
-				</ul>
+				<h4 class="mb10"><?php $nav_menu = wp_get_nav_menu_object(21); echo $nav_menu->name; ?></h4>
+				<?php wp_nav_menu( array( 'theme_location' => 'footer-right-menu', 'container_class' => 'footer-menu' ) ); ?>
+				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

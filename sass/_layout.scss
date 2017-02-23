@@ -19,5 +19,13 @@ body {
 
 
 .homepage h1 a {
-  border-bottom: 6px solid $color-primary;
+  border-bottom-width: 6px;
+}
+
+.post h2 a {
+  border-bottom: none;
+}
+
+ul {
+  padding-left: 0;
 }

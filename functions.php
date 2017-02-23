@@ -150,3 +150,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+
+function register_footer_menus() {
+  register_nav_menu('footer-left-menu',__( 'Footer Left Menu' ));
+	register_nav_menu('footer-middle-menu',__( 'Footer Middle Menu' ));
+	register_nav_menu('footer-right-menu',__( 'Footer Right Menu' ));
+}
+add_action( 'init', 'register_footer_menus' );
