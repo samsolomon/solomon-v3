@@ -33494,6 +33494,9 @@ ul {
   width: 100%;
   height: auto; }
 
+p {
+  line-height: 1.5; }
+
 body {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
@@ -33520,11 +33523,10 @@ a {
   -ms-transition: 0.5s;
   transition: 0.5s;
   color: #FFF;
-  border-bottom: 2px solid #4CCEAC; }
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 93%, #4CCEAC 93%); }
   a:hover, a:focus {
     color: #4CCEAC;
-    text-decoration: none;
-    border-bottom: 2px solid #FFF; }
+    text-decoration: none; }
 
 h1 {
   font-family: "leitura-news", georgia, serif;
@@ -33553,7 +33555,7 @@ h4 {
   .menu-item a {
     margin: 0 15px;
     color: #A1A2A4;
-    border-bottom: none; }
+    background-image: none; }
 
 .current-menu-item a {
   color: #FFF; }
@@ -33561,7 +33563,7 @@ h4 {
 .site-title a {
   color: #FFF;
   text-decoration: none;
-  border-bottom: none; }
+  background-image: none; }
 
 @media only screen and (max-width: 768px) {
   .site-branding {
