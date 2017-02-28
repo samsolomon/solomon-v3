@@ -14,10 +14,30 @@ body {
   -webkit-font-feature-settings: "liga", "clig";
 
   color: $color-white;
+
+  &.light-classes {
+    color: $color-gray-100;
+
+    p {
+      font-family: $serif;
+      line-height: 1.5;
+    }
+
+    ul,ol {
+      font-family: $serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: $color-gray-100
+    }
+  }
 }
 
 .sans-serif {font-family: $sans-serif;}
 .serif {font-family: $serif;}
+
+.text-center {text-align: center;}
 
 a {
   @include transition(.5s);

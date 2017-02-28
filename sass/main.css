@@ -33469,8 +33469,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   max-width: 2000px !important; }
 
 body {
-  background-color: #14171C;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #14171C; }
+  body.light-classes {
+    background-color: #FAFAFA; }
 
 .inline-block {
   display: inline-block; }
@@ -33497,6 +33499,10 @@ ul {
 p {
   line-height: 1.5; }
 
+.continer620 {
+  margin: 0 auto;
+  max-width: 620px; }
+
 body {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
@@ -33510,12 +33516,25 @@ body {
   -ms-font-feature-settings: "liga", "clig";
   -webkit-font-feature-settings: "liga", "clig";
   color: #FFF; }
+  body.light-classes {
+    color: #14171C; }
+    body.light-classes p {
+      font-family: "leitura-news", georgia, serif;
+      line-height: 1.5; }
+    body.light-classes ul, body.light-classes ol {
+      font-family: "leitura-news", georgia, serif;
+      line-height: 1.5; }
+    body.light-classes a {
+      color: #14171C; }
 
 .sans-serif {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
 
 .serif {
   font-family: "leitura-news", georgia, serif; }
+
+.text-center {
+  text-align: center; }
 
 a {
   -webkit-transition: 0.5s;
@@ -33551,7 +33570,8 @@ h4 {
   display: inline-block; }
 
 .menu-item {
-  display: inline-block; }
+  display: inline-block;
+  font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
   .menu-item a {
     margin: 0 15px;
     color: #A1A2A4;
@@ -33563,7 +33583,8 @@ h4 {
 .site-title a {
   color: #FFF;
   text-decoration: none;
-  background-image: none; }
+  background-image: none;
+  font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
 
 @media only screen and (max-width: 768px) {
   .site-branding {
@@ -33576,6 +33597,11 @@ h4 {
     text-align: center; }
     .main-navigation ul {
       padding: 0; } }
+.light-classes .site-footer {
+  background-color: #F3F3F3; }
+  .light-classes .site-footer li.menu-item a {
+    color: #14171C; }
+
 .site-footer {
   background-color: #202328; }
 

@@ -11,13 +11,15 @@
 
 ?>
 
+<!-- REMEMBER TO MAKE CHANGES IN SINGLE.PHP! -->
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer mt30" role="contentinfo">
 		<div class="container pt20 pb20">
 			<div class="col-md-3">
 				<div class="site-branding inline-block">
-					<img class="inline-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/bear.svg">
+					<img class="inline-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/polar-bear.svg">
 					<p class="site-title inline-block ml5"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				</div>
 			</div>

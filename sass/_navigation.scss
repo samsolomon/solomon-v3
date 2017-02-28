@@ -12,6 +12,7 @@
 
 .menu-item {
   display: inline-block;
+  font-family: $sans-serif;
 
   a {
     margin: 0 15px;
@@ -28,6 +29,7 @@
   color: $color-white;
   text-decoration: none;
   background-image: none;
+  font-family: $sans-serif;
 }
 
 
@@ -53,6 +55,19 @@
 // --------------------------------------------------------------
 //          FOOTER
 // --------------------------------------------------------------
+
+.light-classes {
+  .site-footer {
+    background-color: $color-gray-5;
+
+    li.menu-item {
+      a {
+        color: $color-gray-100;
+      }
+    }
+  }
+}
+
 .site-footer {
   background-color: $color-gray-95;
 }

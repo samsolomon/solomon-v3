@@ -33,7 +33,7 @@
 		<div class="container ">
 			<div class="site-branding">
 				<p class="site-title inline-block">
-					<img class="inline-block mr5" src="<?php bloginfo('stylesheet_directory'); ?>/img/bear.svg">
+					<img class="inline-block mr5" src="<?php bloginfo('stylesheet_directory'); ?>/img/polar-bear.svg">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</p>
 			</div><!-- .site-branding -->
