@@ -10,6 +10,9 @@
  */
 
 ?><!DOCTYPE html>
+
+<!-- REMEMBER TO MAKE CHANGES IN SINGLE.PHP! -->
+
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">

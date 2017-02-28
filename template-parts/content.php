@@ -24,29 +24,14 @@
 
 				if ( 'post' === get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php solomon_v3_posted_on(); ?>
+					<!-- <?php solomon_v3_posted_on(); ?> -->
 				</div><!-- .entry-meta -->
 				<?php
 				endif; ?>
 			</header><!-- .entry-header -->
 
-			<div class="entry-content">
-				<?php
-					the_content( sprintf(
-						/* translators: %s: Name of current post. */
-						wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'solomon-v3' ), array( 'span' => array( 'class' => array() ) ) ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
-
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'solomon-v3' ),
-						'after'  => '</div>',
-					) );
-				?>
-			</div>
-
 			<footer class="entry-footer">
-				<?php solomon_v3_entry_footer(); ?>
+				<!-- <?php solomon_v3_entry_footer(); ?> -->
 			</footer><!-- .entry-footer -->
 		</article><!-- #post-## -->
 	</div>
