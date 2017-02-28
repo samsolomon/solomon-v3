@@ -21,11 +21,14 @@ body {
     p {
       font-family: $serif;
       line-height: 1.5;
+      font-weight: 300;
+      margin-bottom: 3%;
     }
 
     ul,ol {
       font-family: $serif;
       line-height: 1.5;
+      margin-bottom: 3%;
     }
 
     a {
@@ -55,7 +58,7 @@ a {
 h1 {
   font-family: $serif;
   font-weight: 600;
-  font-size: 6.5rem;
+  font-size: 6.5rem;  
 }
 
 h2 {
@@ -68,4 +71,18 @@ h4 {
   letter-spacing: 2px;
   color: $color-gray-40;
   margin: 0;
+}
+
+.post {
+  .post-content ul,
+  .post .post-content ol {
+    margin: 0 0 4% 18px;
+  }
+
+  li {
+    list-style-type: square;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-weight: 300;
+  }
 }

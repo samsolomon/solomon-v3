@@ -33520,10 +33520,13 @@ body {
     color: #14171C; }
     body.light-classes p {
       font-family: "leitura-news", georgia, serif;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-weight: 300;
+      margin-bottom: 3%; }
     body.light-classes ul, body.light-classes ol {
       font-family: "leitura-news", georgia, serif;
-      line-height: 1.5; }
+      line-height: 1.5;
+      margin-bottom: 3%; }
     body.light-classes a {
       color: #14171C; }
 
@@ -33562,8 +33565,19 @@ h4 {
   color: #A1A2A4;
   margin: 0; }
 
+.post .post-content ul,
+.post .post .post-content ol {
+  margin: 0 0 4% 18px; }
+.post li {
+  list-style-type: square;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  font-weight: 300; }
+
 .site-branding {
   display: inline-block; }
+  .site-branding a {
+    font-weight: 400; }
 
 .main-navigation {
   float: right;
