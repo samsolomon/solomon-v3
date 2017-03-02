@@ -20,19 +20,23 @@ body {
 
     p {
       font-family: $serif;
-      line-height: 1.5;
+      line-height: 1.6;
       font-weight: 300;
-      margin-bottom: 3%;
+      letter-spacing: -.2px;
     }
 
     ul,ol {
       font-family: $serif;
       line-height: 1.5;
-      margin-bottom: 3%;
     }
 
     a {
-      color: $color-gray-100
+      color: $color-gray-100;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
     }
   }
 }
@@ -55,14 +59,23 @@ a {
   }
 }
 
+p {
+  margin-bottom: 4%;
+}
+
 h1 {
   font-family: $serif;
   font-weight: 600;
-  font-size: 6.5rem;  
+  font-size: 6.5rem;
 }
 
 h2 {
   font-size: 3rem;
+  margin-bottom: 15px;
+
+  a {
+    background-image: none;
+  }
 }
 
 h4 {
@@ -76,7 +89,7 @@ h4 {
 .post {
   .post-content ul,
   .post .post-content ol {
-    margin: 0 0 4% 18px;
+    margin: 0 0 20px 18px;
   }
 
   li {

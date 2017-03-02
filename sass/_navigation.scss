@@ -27,6 +27,10 @@
 
 .current-menu-item a {
   color: $color-white;
+
+  &:hover {
+    color: $color-primary;
+  }
 }
 
 .site-title a {

@@ -43,7 +43,12 @@ p {
   line-height: 1.5;
 }
 
-.continer620 {
+.container-post {
   margin: 0 auto;
   max-width: 620px;
+
+  img {
+    max-width: 1000px;
+    height: auto;
+  }
 }
