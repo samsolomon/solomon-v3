@@ -11,6 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="container entry-header text-center mt-vh-15">
+		<h4><?php echo get_the_date(); ?></h4>
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -20,7 +21,7 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta mt30 mb30">
-			<?php the_time('F y, Y') ?>  <?php the_category(', ') ?>
+			<?php the_category(', ') ?>
 		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
