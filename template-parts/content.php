@@ -23,8 +23,8 @@
 				endif;
 
 				if ( 'post' === get_post_type() ) : ?>
-				<div class="entry-meta">
-					<!-- <?php solomon_v3_posted_on(); ?> -->
+				<div class="entry-meta">					
+					<?php the_time('F y, Y') ?>  <?php the_category(', ') ?>
 				</div><!-- .entry-meta -->
 				<?php
 				endif; ?>

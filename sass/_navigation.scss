@@ -5,7 +5,7 @@
   display: inline-block;
 
   a {
-    font-weight: 400;
+    font-weight: 400;    
   }
 }
 
@@ -22,13 +22,19 @@
     margin: 0 15px;
     color: $color-gray-40;
     background-image: none;
+
+    &:hover,
+    &:focus {
+      color: $color-primary;
+    }
   }
 }
 
 .current-menu-item a {
   color: $color-white;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-primary;
   }
 }
@@ -38,6 +44,11 @@
   text-decoration: none;
   background-image: none;
   font-family: $sans-serif;
+
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
 }
 
 
@@ -71,6 +82,11 @@
     li.menu-item {
       a {
         color: $color-gray-100;
+
+        &:hover,
+        &:focus {
+          color: $color-primary;
+        }
       }
     }
   }
@@ -89,6 +105,11 @@
     a {
       margin: 0;
       color: $color-white;
+
+      &:hover,
+      &:focus {
+        color: $color-primary;
+      }
     }
   }
 }

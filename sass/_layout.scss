@@ -1,11 +1,11 @@
-@include generate-padding-classes(216);
-@include generate-margin-classes(216);
-@include generate-positioning-classes(216);
+@include generate-padding-classes(150);
+@include generate-margin-classes(150);
+@include generate-positioning-classes(150);
 
 @include generate-percentage-widths;
-@include generate-min-heights(600);
-@include generate-min-widths(600);
-@include generate-max-widths(2000);
+@include generate-min-heights(100);
+@include generate-min-widths(100);
+@include generate-max-widths(1000);
 
 
 body {
@@ -45,10 +45,25 @@ p {
 
 .container-post {
   margin: 0 auto;
-  max-width: 620px;
+  max-width: 640px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   img {
-    max-width: 1000px;
+    width: 140%;
     height: auto;
+    margin-left: -20%;
+    margin-right: -20%;
+  }
+}
+
+@media only screen and (max-width : 768px){
+  .container-post {
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0
+    }
   }
 }
