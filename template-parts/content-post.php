@@ -10,19 +10,16 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="container entry-header text-center mt-vh-15">
-		<h4><?php echo get_the_date(); ?></h4>
+	<header class="container entry-header text-center mt-vh-15 mb60">
 		<?php
 		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title mb20">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title mb20"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta mt30 mb30">
-			<?php the_category(', ') ?>
-		</div><!-- .entry-meta -->
+		<h4><?php echo get_the_date(); ?> / <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></h4>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->

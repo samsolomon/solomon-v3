@@ -8413,7 +8413,7 @@ body {
 
 hr {
   width: 160px;
-  height: 2px;
+  height: 1px;
   background-color: #D0D1D2;
   margin-top: 50px;
   margin-bottom: 50px; }
@@ -8481,8 +8481,8 @@ ul, ol {
       top: 0;
       left: 0;
       line-height: 1em;
-      width: 12px;
-      height: 12px;
+      width: 10px;
+      height: 10px;
       background-color: #D0D1D2;
       float: left;
       margin: .45em 1em .25em .25em; }
@@ -8524,8 +8524,7 @@ body {
     body.light-classes p {
       font-family: "leitura-news", georgia, serif;
       line-height: 1.6;
-      font-weight: 300;
-      letter-spacing: -.2px; }
+      font-weight: 300; }
     body.light-classes ul, body.light-classes ol {
       font-family: "leitura-news", georgia, serif;
       line-height: 1.5; }
