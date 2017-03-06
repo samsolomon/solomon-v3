@@ -8446,10 +8446,11 @@ p {
   padding-left: 10px;
   padding-right: 10px; }
   .container-post img {
-    width: 140%;
+    width: 160%;
+    max-width: 992px;
     height: auto;
-    margin-left: -20%;
-    margin-right: -20%; }
+    margin-left: -30%;
+    margin-right: -30%; }
 
 @media only screen and (max-width: 768px) {
   .container-post img {
@@ -8548,7 +8549,7 @@ a {
   -ms-transition: 0.5s;
   transition: 0.5s;
   color: #FFF;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, #4CCEAC 90%); }
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 92%, #4CCEAC 92%); }
   a:hover, a:focus {
     color: #4CCEAC;
     text-decoration: none; }
@@ -8653,6 +8654,9 @@ h4 {
   .form-control:-ms-input-placeholder {
     color: #D0D1D2;
     font-style: italic; }
+
+.email-form {
+  width: 310px !important; }
 
 .btn {
   -webkit-transition: 0.5s;

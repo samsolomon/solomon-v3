@@ -15,7 +15,7 @@ get_header(); ?>
 			<h4 class="mt20">Join Hundreds of Good-Looking People</h4>
 			<form class="form-inline mt20 mb-vh-25">
 			  <div class="form-group">
-			    <input type="text" class="form-control email-form" placeholder="Your email Address…">
+			    <input type="text" class="email-form form-control" placeholder="Your email Address…">
 			  </div>
 			  <button type="submit" class="btn btn-primary">Subscribe</button>
 			</form>
