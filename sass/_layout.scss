@@ -16,6 +16,14 @@ body {
   }
 }
 
+hr {
+  width: 160px;
+  height: 2px;
+  background-color: $color-gray-20;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .inline-block { display: inline-block;}
 .inline {display: inline;}
 .block {display: block;}

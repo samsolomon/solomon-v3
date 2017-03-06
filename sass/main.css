@@ -8411,6 +8411,13 @@ body {
   body.light-classes {
     background-color: #FAFAFA; }
 
+hr {
+  width: 160px;
+  height: 2px;
+  background-color: #D0D1D2;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
 .inline-block {
   display: inline-block; }
 
