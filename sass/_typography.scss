@@ -50,7 +50,7 @@ a {
   @include transition(.5s);
 
   color: $color-white;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 93%, $color-primary 93%);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 90%, $color-primary 90%);
 
   &:hover,
   &:focus {
@@ -92,8 +92,11 @@ h4 {
     margin: 0 0 20px 18px;
   }
 
-  li {
+  ul {
     list-style-type: square;
+  }
+
+  li {
     margin-bottom: 5px;
     margin-left: 30px;
     font-weight: 300;

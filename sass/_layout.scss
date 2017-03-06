@@ -1,12 +1,11 @@
 @include generate-padding-classes(100);
 @include generate-margin-classes(100);
-@include generate-positioning-classes(100);
+@include generate-positioning-classes(1);
 
 @include generate-percentage-widths;
 @include generate-min-heights(1);
 @include generate-min-widths(1);
 @include generate-max-widths(1);
-
 
 body {
   overflow-x: hidden;
@@ -30,8 +29,9 @@ body {
   border-bottom: none;
 }
 
-ul {
+ul,ol {
   padding-left: 0;
+  margin-bottom: 20px;
 }
 
 .feature-image img {

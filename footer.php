@@ -16,7 +16,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer mt30" role="contentinfo">
-		<div class="container pt20 pb20">
+		<div class="container pt20">
 			<div class="col-md-3">
 				<div class="site-branding inline-block">
 					<img class="inline-block" src="<?php bloginfo('stylesheet_directory'); ?>/img/polar-bear.svg">
