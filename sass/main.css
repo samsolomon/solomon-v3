@@ -8578,7 +8578,8 @@ h4 {
 
 .menu-item {
   display: inline-block;
-  font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
+  font-family: "adelle-sans", "Helvetica Neue", sans-serif;
+  font-weight: 400; }
   .menu-item a {
     margin: 0 15px;
     color: #A1A2A4;
