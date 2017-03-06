@@ -8426,10 +8426,6 @@ body {
 .post h2 a {
   border-bottom: none; }
 
-ul, ol {
-  padding-left: 0;
-  margin-bottom: 20px; }
-
 .feature-image img {
   width: 100%;
   height: auto; }
@@ -8453,6 +8449,55 @@ p {
     width: 100%;
     margin-left: 0;
     margin-right: 0; } }
+body.light-classes ul, body.light-classes ol {
+  font-family: "leitura-news", georgia, serif;
+  line-height: 1.5; }
+
+ul, ol {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-weight: 300; }
+
+.post .post-content ul,
+.post .post-content ol {
+  margin: 0 0 20px 18px; }
+.post ul {
+  list-style-type: none; }
+  .post ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px; }
+    .post ul li:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 1em;
+      width: 12px;
+      height: 12px;
+      background-color: #D0D1D2;
+      float: left;
+      margin: .45em 1em .25em .25em; }
+.post ol {
+  list-style-type: none;
+  counter-reset: item; }
+  .post ol li {
+    position: relative;
+    counter-increment: item;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px; }
+    .post ol li:before {
+      content: counter(item);
+      color: #A1A2A4;
+      font-family: "adelle-sans", "Helvetica Neue", sans-serif;
+      font-weight: 600;
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 1em;
+      margin: 3px 0px 0px 5px; }
+
 body {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
@@ -8521,16 +8566,6 @@ h4 {
   letter-spacing: 2px;
   color: #A1A2A4;
   margin: 0; }
-
-.post .post-content ul,
-.post .post .post-content ol {
-  margin: 0 0 20px 18px; }
-.post ul {
-  list-style-type: square; }
-.post li {
-  margin-bottom: 5px;
-  margin-left: 30px;
-  font-weight: 300; }
 
 .site-branding {
   display: inline-block; }
