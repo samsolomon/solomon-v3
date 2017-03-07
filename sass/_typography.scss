@@ -89,3 +89,13 @@ h4 {
   color: $color-gray-40;
   margin: 0;
 }
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 1px solid $color-gray-20;
+    font-style: italic;
+    font-size: 20px;
+    color: $color-gray-60;
+    letter-spacing: -.3px;
+}

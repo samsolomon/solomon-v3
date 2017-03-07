@@ -8576,6 +8576,15 @@ h4 {
   color: #A1A2A4;
   margin: 0; }
 
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 1px solid #D0D1D2;
+  font-style: italic;
+  font-size: 20px;
+  color: #727477;
+  letter-spacing: -.3px; }
+
 .site-branding {
   display: inline-block; }
   .site-branding a {
