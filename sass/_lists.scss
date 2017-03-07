@@ -57,13 +57,12 @@ ul,ol {
       &:before {
         content: counter(item);
         color: $color-gray-40;
-        font-family: $sans-serif;
-        font-weight: 600;
         position: absolute;
+        font-weight: 600; 
         top: 0;
         left: 0;
         line-height: 1em;
-        margin: 3px 0px 0px 5px;
+        margin: 5px 0px 0px 5px;
       }
     }
   }

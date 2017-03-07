@@ -8498,13 +8498,12 @@ ul, ol {
     .post ol li:before {
       content: counter(item);
       color: #A1A2A4;
-      font-family: "adelle-sans", "Helvetica Neue", sans-serif;
-      font-weight: 600;
       position: absolute;
+      font-weight: 600;
       top: 0;
       left: 0;
       line-height: 1em;
-      margin: 3px 0px 0px 5px; }
+      margin: 5px 0px 0px 5px; }
 
 body {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif;
@@ -8552,6 +8551,9 @@ a {
   a:hover, a:focus {
     color: #4CCEAC;
     text-decoration: none; }
+
+b, strong {
+  font-weight: 600; }
 
 p {
   margin-bottom: 4%; }
@@ -8628,6 +8630,8 @@ h4 {
 .site-footer {
   background-color: #202328; }
 
+.footer-menu ul {
+  padding-left: 0; }
 .footer-menu li.menu-item {
   display: list-item;
   list-style: none; }

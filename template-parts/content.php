@@ -12,7 +12,7 @@
 <div class="container">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header mt30 mb30 text-center">
-			<h4><?php echo get_the_date(); ?> / <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></h4>
+			<h4 class="mb5"><?php echo get_the_date(); ?> / <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></h4>
 			<?php
 			if ( is_single() ) :
 				the_title( '<h1 class="entry-title mt0 mb0">', '</h1>' );
