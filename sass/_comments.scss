@@ -12,21 +12,13 @@
 .comments-wrap {
 	width: 60%;
 	margin: 0 auto;
-	padding: 8% 0;
+	padding: 1% 0;
 }
 
 #comments-title {
-	background: #f1f1f1;
  	padding: 5% 0;
  	margin: 0 0 0 0;
- 	font-size: 26px;
- 	font-weight: 500px;
  	text-align: center;
- 	border-bottom: solid 1px #e7e7e7;
- 	 -webkit-transition: .07s ease-in;
-	-moz-transition: .07s ease-in;
-	-o-transition: .07s ease-in;
-	transition: .07s ease-in;
 }
 
 #comments .comment-toggle:hover {
@@ -159,7 +151,7 @@
 	width: 100%;
     padding: 0 0 5% 0;
     margin: 0 0 5% 0;
-    border-bottom: solid 1px #e7e7e7;
+    border-bottom: solid 1px $color-gray-20;
     position: relative;
     list-style:none;
 }
@@ -183,7 +175,7 @@
 
 .children li {
 	padding-left: 5%;
-	border-left: solid 1px #e7e7e7;
+	border-left: solid 1px $color-gray-20;
 }
 
 .children li:last-child {
@@ -209,9 +201,7 @@
 	}
 
 	blockquote {
-		background: #eee;
-		color: #888;
-		padding-bottom: 7px;
+		font-size: 16px;
 
 		&:after {
 			display: none;
@@ -219,6 +209,7 @@
 
 		p {
 			padding-left: 0;
+			margin-bottom: 0 !important;
 		}
 	}
 }
@@ -377,7 +368,7 @@
 	font-family: $sans-serif !important;
   color: $color-gray-40;
   display: inline-block;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 
 .comment-edit-link {
@@ -392,7 +383,7 @@
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
-	border-bottom: solid 1px #e7e7e7;
+	border-bottom: solid 1px $color-gray-20;
 }
 
 #comment-nav-below .nav-previous {
@@ -402,7 +393,3 @@
 #comment-nav-below .nav-next {
 	float: right;
 }
-
-// ==============================================
-// NEW CLASSES
-// ==============================================
