@@ -161,11 +161,11 @@ add_action( 'init', 'register_footer_menus' );
 
 
 /**
- * Custom comment walker that makes comment links nofollow
+ * Custom comment walker that makes comment meta links nofollow
  *
  * @users Walker_Comment
  */
-class WPSE_Walker_Comment extends Walker_Comment
+class Custom_Walker_Comment extends Walker_Comment
 {
     public function start_el( &$output, $comment, $depth = 0, $args = array(), $id = 0 )
     {
@@ -179,10 +179,10 @@ class WPSE_Walker_Comment extends Walker_Comment
            // Start output buffering
            ob_start();
 
-           // Let's use the native html5 comment template
+           // Native html5 comment template
            $this->html5_comment( $comment, $depth, $args );
 
-           // Our modifications (wrap <time> with <span>)
+           // replace the a tag with one that includes nofollow
            $output .= str_replace(
                [ '<a', '</a>' ],
                ['<a rel="nofollow" ', '</a>' ],
@@ -195,9 +195,4 @@ class WPSE_Walker_Comment extends Walker_Comment
            parent::start_el( $output, $comment, $depth, $args, $id );
        }
     }
-} // end class
-
-// <a href="http://localhost:8888/solomon-v3/2014/02/07/why-im-done-with-social-media-buttons/#comment-30">
-// 							<span><time datetime="2014-02-13T12:01:02+00:00">
-// 								February 13, 2014 at 12:01 pm							</time></span>
-// 						</a>
+}

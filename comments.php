@@ -53,10 +53,10 @@
         ];
 
         // Use our custom walker if it's available
-        if( class_exists( 'WPSE_Walker_Comment' ) )
+        if( class_exists( 'Custom_Walker_Comment' ) )
         {
           $args['format'] = 'wpse';
-          $args['walker'] = new WPSE_Walker_Comment;
+          $args['walker'] = new Custom_Walker_Comment;
         }
 
         wp_list_comments( $args );
