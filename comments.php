@@ -28,11 +28,11 @@
 
 <div id="comments">
   <div class="container">
-  	<h3 id="comments-title">
+  	<!-- <h3 id="comments-title">
   		<?php comments_number( __( 'Leave A Comment', 'okay' ), __( '1 Comment', 'okay' ), __( '% Comments', 'okay' ) ); ?>
-  	</h3>
+  	</h3> -->
 
-  <h3 id="comments-title">
+  <!-- <h3 id="comments-title">
     <?php
       printf( // WPCS: XSS OK.
         esc_html( _nx( 'One comment on &ldquo;%2$s&rdquo;', '%1$s comments on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'solomon-v3' ) ),
@@ -40,7 +40,8 @@
         '<span>' . get_the_title() . '</span>'
       );
     ?>
-  </h3><!-- .comments-title -->
+  </h3> -->
+  <!-- .comments-title -->
 
   	<div class="comments-wrap">
   		<ol class="commentlist">
