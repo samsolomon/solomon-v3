@@ -55,14 +55,14 @@ ul,ol {
       padding-left: 30px;
 
       &:before {
-        content: counter(item);
-        color: $color-gray-40;
+        content: "0" counter(item);
+        color: $color-gray-20;
         position: absolute;
-        font-weight: 600; 
+        font-weight: 600;
         top: 0;
         left: 0;
-        line-height: 1em;
-        margin: 5px 0px 0px 5px;
+        font-family: $sans-serif;
+        font-size: 18px;
       }
     }
   }
