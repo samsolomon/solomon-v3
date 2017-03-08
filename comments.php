@@ -46,10 +46,20 @@
   	<div class="comments-wrap">
   		<ol class="commentlist">
       <?php
-        wp_list_comments( array(
-          'style'      => 'ol',
-          'short_ping' => true,
-        ) );
+        // Arguments for wp_list_comments()
+        $args = [
+          'style'       => 'ol',
+          'short_ping'  => true,
+        ];
+
+        // Use our custom walker if it's available
+        if( class_exists( 'WPSE_Walker_Comment' ) )
+        {
+          $args['format'] = 'wpse';
+          $args['walker'] = new WPSE_Walker_Comment;
+        }
+
+        wp_list_comments( $args );
       ?>
   		</ol>
 
