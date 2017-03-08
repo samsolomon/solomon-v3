@@ -199,24 +199,28 @@
 .comment-text {
 	position: relative;
 	font: 16px/26px 'Droid Serif', Georgia, serif;
-}
 
-.comment-text p {
-	margin-bottom: 20px !important;
-}
+	a {
+  	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, #4CCEAC 90%);
+	}
 
-.comment-text blockquote {
-	background: #eee;
-	color: #888;
-	padding-bottom: 7px;
-}
+	p {
+		margin-bottom: 20px !important;
+	}
 
-.comment-text blockquote:after {
-	display: none;
-}
+	blockquote {
+		background: #eee;
+		color: #888;
+		padding-bottom: 7px;
 
-.comment-text blockquote p {
-	padding-left: 0;
+		&:after {
+			display: none;
+		}
+
+		p {
+			padding-left: 0;
+		}
+	}
 }
 
 #comments .reply {
@@ -362,20 +366,18 @@
 
 .comment-meta {
     float: left;
-    margin: 0 0 20px 12px;
+    margin: 0 0 0 12px;
     line-height: 11px;
 }
 
 .comment-time {
 	text-transform: uppercase;
-    font-size: 10px;
-    color: #bbb;
-    display: inline-block;
-    margin-top: 6px;
-}
-
-.comment-time:hover {
-	color: #999;
+  font-size: 11px;
+	letter-spacing: 2px;
+	font-family: $sans-serif !important;
+  color: $color-gray-40;
+  display: inline-block;
+  margin-top: 6px;
 }
 
 .comment-edit-link {
@@ -404,16 +406,3 @@
 // ==============================================
 // NEW CLASSES
 // ==============================================
-
-
-.comment-content {
-	display: inline-block;
-
-	p {
-		font-size: 18px;
-	}
-}
-
-.says {
-	display: none;
-}

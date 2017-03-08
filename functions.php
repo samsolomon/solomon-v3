@@ -160,39 +160,45 @@ function register_footer_menus() {
 add_action( 'init', 'register_footer_menus' );
 
 
-/**
- * Custom comment walker that makes comment meta links nofollow
- *
- * @users Walker_Comment
- */
-class Custom_Walker_Comment extends Walker_Comment
-{
-    public function start_el( &$output, $comment, $depth = 0, $args = array(), $id = 0 )
-    {
-       // Our custom 'wpse' comment format
-       if ( 'wpse' === $args['format'] )
-       {
-           $depth++;
-           $GLOBALS['comment_depth'] = $depth;
-           $GLOBALS['comment'] = $comment;
 
-           // Start output buffering
-           ob_start();
+/* Custom Comment Output */
+function okay_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment; ?>
+<li <?php comment_class( 'clearfix' ); ?> id="li-comment-<?php comment_ID() ?>">
 
-           // Native html5 comment template
-           $this->html5_comment( $comment, $depth, $args );
+	<div class="comment-block" id="comment-<?php comment_ID(); ?>">
+		<div class="comment-info">
+			<div class="comment-author vcard clearfix">
+				<?php echo get_avatar( $comment->comment_author_email, 75 ); ?>
 
-           // replace the a tag with one that includes nofollow
-           $output .= str_replace(
-               [ '<a', '</a>' ],
-               ['<a rel="nofollow" ', '</a>' ],
-               ob_get_clean()
-           );
-       }
-       else
-       {
-           // Fallback for the native comment formats
-           parent::start_el( $output, $comment, $depth, $args, $id );
-       }
-    }
+				<div class="comment-meta commentmetadata">
+					<?php printf( __( '<cite class="fn">%s</cite>', 'okay' ), get_comment_author_link() ) ?>
+					<div style="clear:both;"></div>
+					<p class="comment-time"><?php printf( __( '%1$s at %2$s', 'okay' ), get_comment_date(), get_comment_time() ) ?></p><?php edit_comment_link( __( '(Edit)', 'okay' ), '  ', '' ) ?>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<div class="comment-text">
+			<?php comment_text() ?>
+			<p class="reply">
+				<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ) ?>
+			</p>
+		</div>
+
+		<?php if ( $comment->comment_approved == '0' ) : ?>
+			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'okay' ) ?></em>
+		<?php endif; ?>
+	</div>
+<?php
 }
+
+function okay_cancel_comment_reply_button( $html, $link, $text ) {
+	$style  = isset( $_GET['replytocom'] ) ? '' : ' style="display:none;"';
+	$button = '<div id="cancel-comment-reply-link"' . $style . '>';
+
+	return $button . '<i class="icon-remove-sign"></i> </div>';
+}
+
+add_action( 'cancel_comment_reply_link', 'okay_cancel_comment_reply_button', 10, 3 );
