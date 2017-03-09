@@ -2,13 +2,6 @@
 	background-color: $color-gray-5;
 }
 
-.comments {
-	background: #f9f9f9;
-	border-top: solid 1px #eee;
-    float: left;
-	width: 100%;
-}
-
 .comments-wrap {
 	width: 60%;
 	margin: 0 auto;
@@ -36,8 +29,9 @@
 }
 
 #respond {
-  margin: 0 0 16% 0;
-  padding: 0 0;
+  margin: 0 0 8% 0;
+  padding: 0 0 8% 0;
+	border-bottom: solid 1px $color-gray-20;
 
 	h3 {
 		display: none;
@@ -88,7 +82,6 @@
 #commentform p {
 	width: 100%;
 }
-
 
 #respond textarea {
     line-height: 22px;
@@ -146,11 +139,11 @@
 	position: relative;
 	float: left;
 	width: 100%;
-    padding: 0 0 5% 0;
-    margin: 0 0 5% 0;
-    border-bottom: solid 1px $color-gray-20;
-    position: relative;
-    list-style:none;
+  padding: 0 0 5% 0;
+  margin: 0 0 5% 0;
+  border-bottom: solid 1px $color-gray-20;
+  position: relative;
+  list-style:none;
 }
 
 .commentlist > li:before {
