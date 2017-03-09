@@ -31,19 +31,23 @@
   	<!-- <p id="comments-title">
   		<?php comments_number( __( 'Leave A Comment', 'okay' ), __( '1 Comment', 'okay' ), __( '% Comments', 'okay' ) ); ?>
   	</p> -->
+  <div class="comments-wrap">
+    <h2 id="comments-title">
+      <?php
+        printf( // WPCS: XSS OK.
+          esc_html( _nx( 'One comment about %2$s', '%1$s comments about %2$s', get_comments_number(), 'comments title', 'solomon-v3' ) ),
+          number_format_i18n( get_comments_number() ),
+          '<span>' . get_the_title() . '</span>'
+        );
+      ?>
+    </h2>
+    <!-- .comments-title -->
 
-  <h3 id="comments-title">
-    <?php
-      printf( // WPCS: XSS OK.
-        esc_html( _nx( 'One comment about %2$s', '%1$s comments about %2$s', get_comments_number(), 'comments title', 'solomon-v3' ) ),
-        number_format_i18n( get_comments_number() ),
-        '<span>' . get_the_title() . '</span>'
-      );
-    ?>
-  </h3>
-  <!-- .comments-title -->
+    <?php comment_form(); ?>
+  </div>
 
   	<div class="comments-wrap">
+
   		<ol class="commentlist">
         <?php wp_list_comments( "callback=okay_comment" ); ?>
   		</ol>
@@ -55,7 +59,6 @@
   			</nav>
   		<?php endif; // check for comment navigation ?>
 
-  		<?php comment_form(); ?>
   	</div>
   	<!-- .comments-wrap -->
   </div><!-- .conatiner -->

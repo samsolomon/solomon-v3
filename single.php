@@ -73,7 +73,7 @@ get_sidebar(); ?>
 
 </div><!-- #content -->
 
-<footer id="colophon" class="site-footer mt30" role="contentinfo">
+<footer id="colophon" class="site-footer" role="contentinfo">
   <div class="container pt20">
     <div class="col-md-3">
       <div class="site-branding inline-block">

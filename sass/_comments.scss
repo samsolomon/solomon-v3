@@ -16,9 +16,9 @@
 }
 
 #comments-title {
- 	padding: 5% 0;
+ 	padding: 5% 0 0 0;
  	margin: 0 0 0 0;
- 	text-align: center;
+ // 	text-align: center;
 }
 
 #comments .comment-toggle:hover {
@@ -30,68 +30,65 @@
 	transition: .07s ease-in;
 }
 
-#respond {
-    margin: 0 0 15px 0;
-    padding: 0 0;
-}
-
 .comment #respond {
 	margin-top: 0px;
 	padding-bottom: 10px;
 }
 
-#respond h3 {
-	display: inline-block;
-	margin: 0;
-	font-size: 30px;
+#respond {
+  margin: 0 0 16% 0;
+  padding: 0 0;
+
+	h3 {
+		display: none;
+	}
+
+	p {
+		position: relative;
+		margin-bottom: 15px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	textarea {
+		background: $color-white;
+		font: 16px/26px $serif;
+		width: 100%;
+		padding: 10px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-appearance:none;
+		color: $color-gray-100;
+		border: 1px solid $color-gray-40;
+		border-radius: 2px;
+		font-weight: 300;
+	}
+
+	.required {
+		color: $color-red;
+	}
+
+	.comment-form-comment {
+		width: 100%;
+		display: inline-block;
+	}
+
+	input:focus,
+	textarea:focus {
+	    // outline: none;
+	}
 }
 
 .commentlist #respond h3 {
 	margin-top: 15px;
 }
 
-#respond label {
-    color: #aaa;
-}
-
-#respond p {
-	position: relative;
-}
-
-#respond .required {
-	color: #E75353;
-	display: none;
-}
-
-#respond p { margin-bottom: 15px }
-
 #commentform p {
 	width: 100%;
 }
 
-#respond input[type="text"], #respond textarea {
-    color: #777;
-    border: none;
-    border: solid 1px #eee;
-    border-bottom: solid 1px #ddd;
-    background: #fff;
-    font: 16px/26px 'Helvetica Neue', Helvetica, sans-serif;
-    width: 100%;
-    padding: 10px;
-    -webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-appearance:none;
-}
-
-#respond .comment-form-comment {
-	width: 100%;
-	display: inline-block;
-}
-
-#respond input:focus, #respond textarea:focus {
-    outline: none;
-}
 
 #respond textarea {
     line-height: 22px;
@@ -99,32 +96,32 @@
 }
 
 #commentform #submit {
-	background: #DD574C;
-	color:#fff;
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	font-weight: bold;
+	background: $color-primary;
+	color:$color-white;
+	font-family: $sans-serif;
 	font-size: 14px;
-	text-transform: uppercase;
 	font-weight: 700;
 	padding:10px 20px;
 	border: none;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-transition: .1s ease-in;
-	-moz-transition: .1s ease-in;
-	-o-transition: .1s ease-in;
-	transition: .1s ease-in;
+	letter-spacing: 1px;
+	-webkit-transition: .5s ease-in;
+	-moz-transition: .5s ease-in;
+	-o-transition: .5s ease-in;
+	transition: .5s ease-in;
 	-webkit-appearance: none;
-}
 
-#commentform #submit:hover {
-	background: #555;
-	cursor: pointer;
-	-webkit-transition: .1s ease-in;
-	-moz-transition: .1s ease-in;
-	-o-transition: .1s ease-in;
-	transition: .1s ease-in;
+	&:hover {
+		background-color: shade($color-primary, 30);
+		border-color: shade($color-primary, 30);
+		cursor: pointer;
+		-webkit-transition: .5s ease-in;
+		-moz-transition: .5s ease-in;
+		-o-transition: .5s ease-in;
+		transition: .5s ease-in;
+	}
 }
 
 .form-allowed-tags {
@@ -190,7 +187,7 @@
 
 .comment-text {
 	position: relative;
-	font: 16px/26px 'Droid Serif', Georgia, serif;
+	font: 16px/26px $sans-serif;
 
 	a {
   	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, #4CCEAC 90%);
@@ -242,7 +239,7 @@
 }
 
 .reply a:hover {
-	color: #fff;
+	color: $color-white;
 	background: #555;
 	-webkit-transition: .1s ease-in;
 	-moz-transition: .1s ease-in;
@@ -284,29 +281,22 @@
 	cursor: pointer;
 }
 
-.comments .logged-in-as {
+.logged-in-as {
 	float: left;
-	font-size: 12px !important;
-	text-transform: uppercase;
-	color: #aaa;
-}
-
-.comments .logged-in-as a {
-	color: #777;
-}
-
-.comments .logged-in-as a:hover {
-	color: #555;
+	width: 100% !important;
+	font-size: 14px;
+	margin: 5px 0 20px 0;
+	font-weight: 400 !important;
+	font-family: $sans-serif !important;
 }
 
 #comments .comment-notes {
 	width: 100% !important;
-	font-size: 12px;
-	line-height: 18px;
-	text-transform: uppercase;
-	color: #bbb;
+	font-size: 14px;
+	color: $color-gray-40;
 	margin: 5px 0 20px 0;
-	letter-spacing: 1px;
+	font-weight: 400;
+	font-family: $sans-serif;
 }
 
 .comment-notes .required {
@@ -342,11 +332,7 @@
 
 	a {
 		color: #555;
-
-		&:hover {
-			background: none;
-			color: #777;
-		}
+		background-image: none;
 	}
 }
 

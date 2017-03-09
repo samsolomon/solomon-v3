@@ -13,7 +13,7 @@
 
   &:hover,
   &:focus {
-    background-color: shade($color-primary, 15);
-    border-color: shade($color-primary, 15);
+    background-color: shade($color-primary, 30);
+    border-color: shade($color-primary, 30);
   }
 }
