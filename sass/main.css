@@ -8856,13 +8856,12 @@ label {
   margin-bottom: 0 !important; }
 
 .reply a {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 9px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  background: #eee;
-  color: #999;
+  font-family: "adelle-sans", "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: #E7E7E8;
+  color: #727477;
   padding: 5px 10px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -8878,7 +8877,7 @@ label {
 
 .reply a:hover {
   color: #FFF;
-  background: #555;
+  background: #424448;
   -webkit-transition: .1s ease-in;
   -moz-transition: .1s ease-in;
   -o-transition: .1s ease-in;
@@ -8919,7 +8918,7 @@ label {
   float: left;
   width: 100% !important;
   font-size: 14px;
-  margin: 5px 0 20px 0;
+  margin: 10px 0 20px 0;
   font-weight: 400 !important;
   font-family: "adelle-sans", "Helvetica Neue", sans-serif !important; }
 
@@ -8927,7 +8926,7 @@ label {
   width: 100% !important;
   font-size: 14px;
   color: #A1A2A4;
-  margin: 5px 0 20px 0;
+  margin: 10px 0 20px 0;
   font-weight: 400;
   font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
 
@@ -8937,9 +8936,10 @@ label {
   right: auto !important; }
 
 .comment-awaiting-moderation {
-  color: #555;
-  font-weight: bold;
-  font-size: 11px; }
+  display: inline-block;
+  color: #A1A2A4;
+  font-size: 11px;
+  margin-top: 10px; }
 
 .vcard {
   width: 100%;

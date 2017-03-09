@@ -209,13 +209,12 @@
 }
 
 .reply a {
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-size: 9px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	background: #eee;
-	color: #999;
+	font-family: $sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	background: $color-gray-10;
+	color: $color-gray-60;
 	padding: 5px 10px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -233,7 +232,7 @@
 
 .reply a:hover {
 	color: $color-white;
-	background: #555;
+	background: $color-gray-80;
 	-webkit-transition: .1s ease-in;
 	-moz-transition: .1s ease-in;
 	-o-transition: .1s ease-in;
@@ -278,7 +277,7 @@
 	float: left;
 	width: 100% !important;
 	font-size: 14px;
-	margin: 5px 0 20px 0;
+	margin: 10px 0 20px 0;
 	font-weight: 400 !important;
 	font-family: $sans-serif !important;
 }
@@ -287,7 +286,7 @@
 	width: 100% !important;
 	font-size: 14px;
 	color: $color-gray-40;
-	margin: 5px 0 20px 0;
+	margin: 10px 0 20px 0;
 	font-weight: 400;
 	font-family: $sans-serif;
 }
@@ -299,9 +298,10 @@
 }
 
 .comment-awaiting-moderation {
-  color: #555;
-  font-weight: bold;
+	display: inline-block;
+  color: $color-gray-40;
   font-size: 11px;
+	margin-top: 10px;
 }
 
 .vcard {
