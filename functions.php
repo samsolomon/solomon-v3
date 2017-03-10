@@ -204,3 +204,11 @@ function okay_cancel_comment_reply_button( $html, $link, $text ) {
 }
 
 add_action( 'cancel_comment_reply_link', 'okay_cancel_comment_reply_button', 10, 3 );
+
+
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+	return '... ';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

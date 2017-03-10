@@ -8629,6 +8629,9 @@ blockquote {
 .suggested-posts p {
   color: #727477;
   margin-bottom: 10px; }
+  .suggested-posts p a {
+    font-family: "adelle-sans", "Helvetica Neue", sans-serif;
+    font-weight: 400; }
 .suggested-posts h3 {
   font-family: "leitura-news", georgia, serif;
   background-image: none; }

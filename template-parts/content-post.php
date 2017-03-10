@@ -65,7 +65,7 @@
 								<?php echo get_avatar( get_the_author_meta( 'ID' ), 36 ); ?>
 								<span class="ml1">by <span class="semibold"><?php the_author_posts_link(); ?></span> on <?php the_date(); ?></span>
 							</div> -->
-							<p class="text-center"><a href="<?php the_permalink();?>" class="color-primary">Continue Reading</a></p>
+							<p class="text-center"><a href="<?php the_permalink();?>" class="color-primary">Continue Reading</a></span>
 				    </div>
 				    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				<?php endif; ?>
