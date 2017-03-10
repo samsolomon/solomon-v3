@@ -18,6 +18,10 @@ body {
   &.light-classes {
     color: $color-gray-100;
 
+    h2 {
+      font-family: $serif;
+    }
+
     p {
       font-family: $serif;
       line-height: 1.6;
@@ -45,6 +49,24 @@ body {
 .serif {font-family: $serif;}
 
 .text-center {text-align: center;}
+
+.color-gray-100 { color: $color-gray-100; }
+.color-gray-95 { color: $color-gray-95; }
+.color-gray-80 { color: $color-gray-80; }
+.color-gray-60 { color: $color-gray-60; }
+.color-gray-40 { color: $color-gray-40; }
+.color-gray-20 { color: $color-gray-20; }
+.color-gray-10 { color: $color-gray-10; }
+.color-gray-5 { color: $color-gray-5; }
+
+.color-white { color: $color-white; }
+.color-off-white { color: $color-off-white; }
+
+.color-primary { color: $color-primary !important; }
+
+.color-red { color: $color-red; }
+
+.remove-underline { background-image: none !important; }
 
 a {
   @include transition(.5s);
@@ -98,4 +120,20 @@ blockquote {
     font-size: 20px;
     color: $color-gray-60;
     letter-spacing: -.3px;
+}
+
+.suggested-posts {
+  p {
+    color: $color-gray-60;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-family: $serif;
+    background-image: none;
+  }
+
+  a {
+    color: $color-primary;
+  }
 }
