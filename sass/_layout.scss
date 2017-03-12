@@ -61,6 +61,10 @@ p {
   }
 }
 
+.suggested-posts {
+  background-color: $color-gray-5;
+}
+
 @media only screen and (max-width : 768px){
   .container-post {
 

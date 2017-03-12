@@ -8452,6 +8452,9 @@ p {
     margin-left: -30%;
     margin-right: -30%; }
 
+.suggested-posts {
+  background-color: #F3F3F3; }
+
 @media only screen and (max-width: 768px) {
   .container-post img {
     width: 100%;
@@ -8521,7 +8524,8 @@ body {
   body.light-classes {
     color: #14171C; }
     body.light-classes h2 {
-      font-family: "leitura-news", georgia, serif; }
+      font-family: "leitura-news", georgia, serif;
+      font-weight: 600; }
     body.light-classes p {
       font-family: "leitura-news", georgia, serif;
       line-height: 1.6;
@@ -8533,6 +8537,14 @@ body {
       color: #14171C; }
       body.light-classes a:hover, body.light-classes a:focus {
         color: #4CCEAC; }
+    body.light-classes .small-caps {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #A1A2A4;
+      margin: 0;
+      font-family: "adelle-sans", "Helvetica Neue", sans-serif;
+      font-weight: 500; }
 
 .sans-serif {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
@@ -8637,6 +8649,14 @@ blockquote {
   background-image: none; }
 .suggested-posts a {
   color: #4CCEAC; }
+
+.small-caps {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #A1A2A4;
+  margin: 0;
+  font-weight: 500; }
 
 .site-branding {
   display: inline-block; }
@@ -8746,9 +8766,6 @@ label {
   .btn-primary:hover, .btn-primary:focus {
     background-color: #359078;
     border-color: #359078; }
-
-#comments {
-  background-color: #F3F3F3; }
 
 .comments-wrap {
   margin: 0 auto;

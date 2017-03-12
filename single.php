@@ -97,7 +97,7 @@ get_sidebar(); ?>
   </div>
 </footer><!-- #colophon -->
 <div class="mt20 mb20">
-  <h4 class="text-center">Copyright &copy; Sam Solomon <?php echo date("Y"); ?>. All rights reserved.</h4>
+  <p class="small-caps text-center">Copyright &copy; Sam Solomon <?php echo date("Y"); ?>. All rights reserved.</p>
 </div>
 </div><!-- #page -->
 

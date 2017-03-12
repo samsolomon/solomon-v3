@@ -24,7 +24,8 @@
 						'after'  => '</div>',
 					) );
 				?>
-			</div><!-- .entry-content -->
+			</div>
+			<!-- .entry-content -->
 
 			<?php if ( get_edit_post_link() ) : ?>
 				<footer class="entry-footer">
