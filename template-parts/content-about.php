@@ -13,9 +13,9 @@
 		</div>
 
 		<div class="row mt30">
-			<div class="col-sm-6">
+			<div class="col-sm-6 col-sm-offset-3">
 
-			<div class="entry-content">
+			<div class="entry-content mb50">
 				<?php
 					the_content();
 
@@ -43,12 +43,6 @@
 				</footer><!-- .entry-footer -->
 
 			</div><!-- end column -->
-			<div class="col-sm-offset-2 col-sm-3">
-				<h4 class="mb10"><?php $nav_menu = wp_get_nav_menu_object(21); echo $nav_menu->name; ?></h4>
-				<?php wp_nav_menu( array( 'theme_location' => 'footer-right-menu', 'container_class' => 'footer-menu' ) ); ?>
-				</div>
-			</div>
-
 		</div>
 
 		<?php endif; ?>
