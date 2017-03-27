@@ -53,11 +53,14 @@ p {
   padding-right: 10px;
 
   img {
-    width: 160%;
-    max-width: 992px;
+    max-width: 100%;
     height: auto;
-    margin-left: -30%;
-    margin-right: -30%;
+
+    &.big {
+      max-width: 160%;
+      margin-left: -30%;
+      margin-right: -30%;
+    }
   }
 }
 
@@ -68,7 +71,8 @@ p {
 @media only screen and (max-width : 768px){
   .container-post {
 
-    img {
+    img,
+    img.big {
       width: 100%;
       margin-left: 0;
       margin-right: 0
