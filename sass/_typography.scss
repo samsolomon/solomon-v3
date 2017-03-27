@@ -51,7 +51,7 @@ body {
       color: #A1A2A4;
       margin: 0;
       font-family: $sans-serif;
-      font-weight: 500;
+      font-weight: 400;
     }
   }
 }
@@ -147,6 +147,7 @@ blockquote {
   h3 {
     font-family: $serif;
     background-image: none;
+    font-weight: 600;
   }
 
   a {
@@ -160,7 +161,7 @@ blockquote {
   letter-spacing: 2px;
   color: #A1A2A4;
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media only screen and (max-width : 768px){

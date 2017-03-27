@@ -8546,7 +8546,7 @@ body {
       color: #A1A2A4;
       margin: 0;
       font-family: "adelle-sans", "Helvetica Neue", sans-serif;
-      font-weight: 500; }
+      font-weight: 400; }
 
 .sans-serif {
   font-family: "adelle-sans", "Helvetica Neue", sans-serif; }
@@ -8648,7 +8648,8 @@ blockquote {
     font-weight: 400; }
 .suggested-posts h3 {
   font-family: "leitura-news", georgia, serif;
-  background-image: none; }
+  background-image: none;
+  font-weight: 600; }
 .suggested-posts a {
   color: #4CCEAC; }
 
@@ -8658,7 +8659,7 @@ blockquote {
   letter-spacing: 2px;
   color: #A1A2A4;
   margin: 0;
-  font-weight: 500; }
+  font-weight: 400; }
 
 @media only screen and (max-width: 768px) {
   h1 {
@@ -8849,7 +8850,7 @@ label {
   color: #FFF;
   font-family: "adelle-sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px 20px;
   border: none;
   -webkit-border-radius: 2px;
@@ -9039,7 +9040,7 @@ label {
   float: left;
   font-style: normal;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px; }
   .fn a {
     color: #555;
